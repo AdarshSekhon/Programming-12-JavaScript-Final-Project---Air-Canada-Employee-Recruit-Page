@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <!-- <img src="./logo.svg" class="logo" alt="logo" /> -->
+          <button class="nav-toggle">
+            <i class="fa-solid fa-plane-up"></i>
+        </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+
+
+          <!-- BUTTON #1 - Dislike button that decrements counter by 1 if the user clicks on it. Please see JavaScript 
+          for code for creation of DOM object for button through creation of variable called "decrease" and addition of 
+          event listener that decrements the counter whenever the user clicks on it.  -->
+          <li>
+            <a id="decrease" href="#decrease">dislike</a>
+          </li>
+
+
+          <!-- BUTTON #2 - Reset button that resets the counter if the user clicks on it. Please see JavaScript 
+          for code for creation of DOM object for button through creation of variable called "reset" and addition of 
+          event listener that resets the counter whenever the user clicks on it.  -->
+          <li>
+            <a id="reset" href="#reset">reset</a>
+          </li>
+
+
+          <!-- BUTTON #3 - Like button that increments the counter by 2 if the user clicks on it. Please see JavaScript 
+          for code for creation of DOM object for button through creation of variable called "increase" and addition of 
+          event listener that increments the counter whenever the user clicks on it.  -->
+          <li>
+            <a id="increase" href="#increase">like</a>
+          </li>
+
+
+          <!-- BUTTON #4 - Dislike button that changes the colour scheme of the webpage to a random colour when the user clicks 
+          on it. Please see JavaScript for code for creation of DOM object for button through creation of variable called "flipper"
+          and addition of event listener that modifies the background-colour of the body when the user clicks on it.  -->
+          <li>
+            <a id="flipper" href="#colourful">colour-flipper</a>
+          </li>
+
+
+          <!-- BUTTON #5 - "Previous-button" that moves to the previous employee profile in the reviews section when the user 
+          clicks on it. Please see JavaScript for code for creation of DOM object for button through creation of variable called 
+          "previous" and addition of event listener that moves on to the previous employee when the user clicks on it.  -->
+          <li>
+            <a id="previous" href="#review-page">previous-review</a>
+          </li>
+
+
+          <!-- BUTTON #6 - "Next-button" that moves on to the next employee profile in the reviews section when the user clicks 
+          on it. Please see JavaScript for code for creation of DOM object for button through creation of variable called "next" 
+          and addition of event listener that moves on to the next employee whenever the user clicks on it.  -->
+          <li>
+            <a id="next" href="#review-page">next-review</a>
+          </li>
+
+
+          <!-- BUTTON #7 - "Video-player" button that plays or pauses video below whenever the user clicks on it. Please see JavaScript 
+          for code for creation of DOM object for button through creation of variable called "videobtn" and addition of 
+          event listener that plays or pauses the video the user clicks on it.  -->
+          <li>
+            <a id="vid" href="#video1">video</a>
+          </li>
+
+
+
+        </ul>
+        <!-- social media -->
+        <!-- <ul class="social-icons"> -->
+          <!-- <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li> -->
+          <!-- <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-sketch"></i>
+            </a>
+          </li>
+        </ul> -->
+      </div>
+    </nav>
+    <main>
+        <div class="container">
+          <h1>Was this webpage helpful?</h1>
+          <span id="value">0</span>
+          <div class="button-container">
+            <button id="decrease" class="btn decrease">dislike</button>
+            <button id="reset" class="btn reset">reset</button>
+            <button id="increase" class="btn increase">like</button>
+          </div>
+        </div>
+      </main>
+
+
+      <nav>
+        <div class="nav-center">
+          <!-- <h4>color flipper</h4> -->
+          <!-- <ul class="nav-links">
+            <li><a href="index.html">simple</a></li>
+            <li><a href="hex.html">hex</a></li>
+          </ul> -->
+        </div>
+      </nav>
+      <main>
+        <div class="container">
+          <h2>background color : <span class="color">#f1f5f8</span></h2>
+          <button id="colourful" class="btn btn-hero">click me</button>
+        </div>
+      </main>
+
+
+
+
+
+      <main>
+        <section class="container">
+          <!-- title -->
+          <div class="title">
+            <h2 id="review-page">Our Employees' thoughts about Air Canada</h2>
+            <div class="underline"></div>
+          </div>
+          <!-- review -->
+          <article class="review">
+            <div class="img-container">
+              <img src="person-1.jpeg" id="person-img" alt="" />
+            </div>
+            <h4 id="author">sara jones</h4>
+            <p id="job">ux designer</p>
+            <p id="info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+              Iste, doloremque nihil?
+            </p>
+            <!-- prev next buttons-->
+            <div class="button-container">
+              <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <!-- random button -->
+            <button class="random-btn">surprise me</button>
+          </article>
+        </section>
+      </main>
+
+      <!-- preloader -->
+    <div class="preloader">
+      <img src="preloader.gif" alt="preloader" class="preloader__item" />
+    </div>
+    <!-- header -->
+    <header>
+      <video controls muted autoplay loop class="video-container">
+        <source src="./video.mp4" type="video/mp4" />
+      </video>
+      <h1 id="video1">Fly with us now!</h1>
+      <!-- video switch -->
+      <button class="switch-btn">
+        <span>
+          play
+        </span>
+        <span>
+          pause
+        </span>
+        <span class="switch"></span>
+      </button>
+    </header>
+
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
